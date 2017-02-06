@@ -6,8 +6,8 @@ import controller.CustomerController;
 import controller.AdminController;
 
 public class Index {
+	
 	public static void main(String[] args) {
-		while(true){
 			switch(JOptionPane.showInputDialog(null,"0.EXIT 1.일반회원 2.관리자")){
 			case "0": return;
 			case "1": new CustomerController().start(); break; 
@@ -18,4 +18,3 @@ public class Index {
 		
 		
 	}
-}

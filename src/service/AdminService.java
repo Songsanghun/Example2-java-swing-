@@ -20,7 +20,6 @@ public interface AdminService {
 	// read special
 	public MemberBean findById(String id); // MemberBean 에서 find 해라 String id를 
 	public MemberBean[] findByName(String name); //name을 findByname해라 반환은 Memberan[]로
-	public int countByName(String name); //이름을 카운트 이름 숫자 (랭스를 정해줘야 배열을 불러올수있다.)
 	public MemberBean[] list();
 	public int count();
 	/**
@@ -32,5 +31,9 @@ public interface AdminService {
 	* DELETE : DELETE
 	*
 	*/
-	public void remove(MemberBean member); //remove해라 MemberBean을
+	public void remove(String id); //remove해라 id을 넣어서 
+	// util
+	// validation
+	public boolean exist(String keyword);
+	public int countByName(String name); //이름을 카운트 이름 숫자 (랭스를 정해줘야 배열을 불러올수있다.)
 }
