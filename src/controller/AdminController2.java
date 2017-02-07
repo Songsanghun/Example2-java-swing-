@@ -1,15 +1,15 @@
 package controller;
 
 import domain.MemberBean;
-import service.AdminService;
-import serviceImpl.AdminServiceImpl;
+import service.AdminService2;
+import serviceImpl.AdminServiceImpl2;
 
 import javax.swing.*;
 
 public class AdminController2 {
 	public void start() {
 		MemberBean member= null;
-		AdminService service = new AdminServiceImpl();  //다형성  타입이 다르면 다형성이라고 한다. : 부모꺼를 칭하고 불러오는건 자식.
+		AdminService2 service = new AdminServiceImpl2();  //다형성  타입이 다르면 다형성이라고 한다. : 부모꺼를 칭하고 불러오는건 자식.
 		String ssn = "";
 		int i = 0;
 		while (true) { 

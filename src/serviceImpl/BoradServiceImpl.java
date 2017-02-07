@@ -11,7 +11,7 @@ public class BoradServiceImpl implements BoardService{
 		list = new ArrayList<ArticleBean>();  //()안에 아무것도 안넣으면 Default 가 된다. 그러면 기본이 10 되고 1씩 증가한다.
 	}
 	@Override
-	public void addArticle(ArticleBean param) {
+	public void addArticle(ArticleBean param){
 		list.add(param);
 	}
 	@Override
