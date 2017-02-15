@@ -1,7 +1,13 @@
 package domain;
 
-public class AccountBean {
+import java.io.Serializable;
+
+public class AccountBean implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;   // 하는 이유는 바로 ObjectStream 을 사용하기 위해서
 	protected String uid , accountType, createDate ,money , accountNo;
 	
 	public void setMoney(String money){

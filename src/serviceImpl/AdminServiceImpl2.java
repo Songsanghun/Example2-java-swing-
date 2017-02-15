@@ -4,11 +4,9 @@ import domain.MemberBean;
 import service.AdminService2;
 
 public class AdminServiceImpl2 implements AdminService2{
-	private MemberBean member; // 집합 하나는 하나의 요소를 여러번 넣어서 만들어 진다. 자료구조 컬렉션이다.
-	private MemberBean[] arr;
+	private MemberBean[] arr;// 집합 하나는 하나의 요소를 여러번 넣어서 만들어 진다. 자료구조 컬렉션이다.
 	private int count;
 	public AdminServiceImpl2() {
-		member = new MemberBean();
 		count = 0;
 		arr = new MemberBean[count]; //주소만 있는 상태 NULL 값 처리 상태 담는 공간이 없다. 메모리 상에 주소값은 가진다.
 		//arr은 heap에 저장.
